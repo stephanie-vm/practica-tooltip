@@ -1,0 +1,36 @@
+body {
+  width: 100px;
+  padding-top: 100px; }
+
+img {
+  position: relative;
+  left: 500px;
+  top: 50px; }
+
+#tooltip:hover .texto {
+  display: inline-block;
+  padding: 0; }
+
+.texto {
+  display: none;
+  position: absolute;
+  background-color: #777777;
+  line-height: 40px;
+  z-index: 1;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  padding: 5px 10px;
+  border-radius: 7px;
+  left: 540px;
+  top: 320px; }
+
+.texto::after {
+  content: "";
+  display: block;
+  border-bottom: 7px solid #777777;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  position: absolute;
+  left: 32px;
+  bottom: 39px; }
